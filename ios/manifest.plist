@@ -31,7 +31,7 @@
 				<key>bundle-identifier</key>
 				<string>com.pandasuite.pandaviewer.enterprise</string>
 				<key>bundle-version</key>
-				<string>3.2.21</string>
+				<string>3.2.22</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
