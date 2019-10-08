@@ -7,13 +7,15 @@
 	<script type="text/javascript"> // <![CDATA[
 		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-	if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-	    window.location = "https://get.pandasuite.com/ios/";
-	} else if (/android/i.test(userAgent)) {
-	    window.location = "https://get.pandasuite.com/android/";
-	} else {
-	    window.location = "https://pandasuite.com/";
-	}
+		if (!window.MSStream
+			&& ((navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+				|| /iPad|iPhone|iPod/.test(userAgent))) {
+		    window.location = "https://get.pandasuite.com/ios/";
+		} else if (/android/i.test(userAgent)) {
+		    window.location = "https://get.pandasuite.com/android/";
+		} else {
+		    window.location = "https://pandasuite.com/";
+		}
 	</script>  
 </head>
   <body>
