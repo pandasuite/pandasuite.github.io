@@ -4,18 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>PandaSuite Viewer</title>
-	<script type="text/javascript"> // <![CDATA[
-		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-		if (!window.MSStream
-			&& ((navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
-				|| /iPad|iPhone|iPod/.test(userAgent))) {
-		    window.location = "https://get.pandasuite.com/ios/";
-		} else if (/android/i.test(userAgent)) {
-		    window.location = "https://get.pandasuite.com/android/";
-		} else {
-		    window.location = "https://pandasuite.com/";
-		}
+	<script type="text/javascript">
+		window.location = "https://viewer.pandasuite.com/";
 	</script>  
 </head>
   <body>
